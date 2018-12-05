@@ -27,7 +27,6 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Set;
-import java.util.logging.Level;
 
 /**
  *
@@ -137,7 +136,7 @@ public class FlooringMasteryOrderDaoFileImpl implements FlooringMasteryOrderDao 
 
     @Override
     public Order removeOrder(Order order) {
-        List<Order> orders = new ArrayList<Order>();
+        List<Order> orders = new ArrayList<>();
         orders = allOrders.get(order.getOrderDate());
         Order orderToRemove = null;
         for (Order o : orders) {
@@ -161,7 +160,7 @@ public class FlooringMasteryOrderDaoFileImpl implements FlooringMasteryOrderDao 
     ) {
         List<Order> orders = allOrders.get(order.getOrderDate());
         if (orders == null) {
-            orders = new ArrayList<Order>();
+            orders = new ArrayList<>();
         }
 
         orders.add(order);

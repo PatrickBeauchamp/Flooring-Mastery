@@ -10,9 +10,6 @@ import com.sg.flooringmastery.service.FlooringMasteryDataValidationException;
 import com.sg.flooringmastery.service.FlooringMasteryPersistenceException;
 import com.sg.flooringmastery.service.FlooringMasteryServiceLayer;
 import com.sg.flooringmastery.ui.FlooringMasteryView;
-import com.sg.flooringmastery.ui.UserIO;
-import com.sg.flooringmastery.ui.UserIOConsoleImpl;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
